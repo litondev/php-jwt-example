@@ -20,8 +20,10 @@ $key = "YnZpOVGePxC6NtMtkBeQ2TOSFE5RUUpLsDXyB3UsZMAkmshHe2aq1w75gSBuFHwD";
 $payload = array(
     "iss" => null,
     "iat" => rand(100000000,999999999),
+    // EXPIRED 1 JAM
     "exp" => time() + (60 * 60), 
     "nbf" => rand(100000000,999999999),
+    // DATA YANG DI DATABASE
     "sub" => "joko@gmail.com",
     "jti" => generateRandomString(16)
 );
